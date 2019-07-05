@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <FrameLayout
+            android:id="@+id/content_frame_reader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="false"/>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true">
+        <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_reader"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@color/darkest_semitransparent"
+                app:theme="@style/MyDarkToolbarTheme"/>
+        <LinearLayout
+                android:id="@+id/pageNavLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="18dp"
+                android:orientation="vertical"
+                android:background="@drawable/reader_nav_bg"
+                android:gravity="center_horizontal"
+                android:paddingTop="2dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+            <TextView
+                    android:id="@+id/pageNavTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/offWhite"/>
+
+            <SeekBar
+                android:id="@+id/pageSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="2dp"
+                android:minHeight="2dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="20dp"
+                android:progressDrawable="@drawable/reader_nav_progress_inverse"
+                android:thumb="@drawable/reader_nav_thumb"
+                android:thumbOffset="6dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

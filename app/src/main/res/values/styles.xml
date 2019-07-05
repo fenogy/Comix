@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorAccent">@color/accent</item>
+        <!--<item name="colorControlNormal">@color/lighter</item>-->
+        <item name="colorControlHighlight">@color/ripple_material_light</item>
+
+        <item name="android:textColor">@color/offWhite</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:itemTextAppearance">@style/itemTextStyle.AppTheme</item>
+
+    </style>
+
+    <style name="MyToolbarTheme" parent="Widget.AppCompat.ActionBar">
+        <item name="android:textColorPrimary">@color/lightest</item>
+        <item name="colorControlNormal">@color/lightest</item>
+    </style>
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">@color/primaryDark</item>
+        <item name="android:textColor">@color/offWhite</item>
+        <!--<item name="android:textColor">@color/offWhite</item>-->
+
+    </style>
+    <style name="itemTextStyle.AppTheme" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textColor">@color/offWhite</item>
+        <!--<item name="android:textSize">@dimen/text_content</item>-->
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_splash</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/primaryDark</item>
+        <item name="android:textColor">@color/yellow</item>
+        <item name="android:textSize">14sp</item>
+
+    </style>
+
+</resources>

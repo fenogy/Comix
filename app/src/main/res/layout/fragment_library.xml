@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+    <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/fragmentLibraryLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <GridView
+            android:id="@+id/groupGridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|top"
+            android:clipToPadding="false"
+            android:drawSelectorOnTop="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:horizontalSpacing="@dimen/grid_margin"
+            android:padding="@dimen/grid_margin"
+            android:scrollbarStyle="insideOverlay"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="@dimen/grid_margin" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <LinearLayout
+            android:id="@+id/library_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_hops_grey600_48dp"
+                android:scaleType="center"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/library_empty"
+                android:textSize="@dimen/card_text"
+                android:gravity="center"
+                android:padding="@dimen/button_horizontal_padding"/>
+
+        <Button
+            android:id="@+id/button_download"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TestDownload" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="define_int_Junrar" translatable="false">year;owner</string>
+    <string name="library_Junrar_author" translatable="false">Edmund Wagner</string>
+    <string name="library_Junrar_authorWebsite" translatable="false">https://github.com/junrar/junrar</string>
+    <string name="library_Junrar_libraryName" translatable="false">Junrar</string>
+    <string name="library_Junrar_libraryDescription" translatable="false">Adds support to read and extract a rar.</string>
+    <string name="library_Junrar_libraryVersion" translatable="false">0.7</string>
+    <string name="library_Junrar_libraryWebsite" translatable="false">https://github.com/junrar/junrar</string>
+    <string name="library_Junrar_licenseVersion" translatable="false">Unrar License</string>
+    <string name="library_Junrar_licenseLink" translatable="false">https://github.com/junrar/junrar/blob/master/license.txt</string>
+    <string name="library_Junrar_licenseContent" translatable="false">The source code of UnRAR utility is freeware.</string>
+    <string name="library_Junrar_isOpenSource" translatable="false">true</string>
+    <string name="library_Junrar_repositoryLink" translatable="false">https://github.com/junrar/junrar</string>
+    <string name="library_Junrar_classPath" translatable="false">com.github.junrar</string>
+</resources>

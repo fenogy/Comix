@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#333333"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView_logo_initial"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/banner" />
+
+
+        <ImageButton
+            android:id="@+id/imageBtnMenu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/menu_bkg"
+             />
+        <!--android:onClick="showPopupMenu"-->
+
+    </RelativeLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#999999"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/relativeLayout">
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/offWhite"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:paddingStart="8dp"
+                    android:paddingTop="5dp"
+                    android:text="Recent"
+                    android:textColor="@color/darkest"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <!--<ImageView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:paddingTop="6dp"-->
+                    <!--android:layout_height="2px"-->
+                    <!--android:background="@drawable/divider_dark_horizontal"/>-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="175dp">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/library_recent"
+                        android:layout_width="match_parent"
+                        android:layout_height="175dp"
+                        android:scrollbars="horizontal" />
+
+                    <TextView
+                        android:id="@+id/empty_recent_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="175dp"
+                        android:gravity="center"
+                        android:padding="@dimen/button_horizontal_padding"
+                        android:text="කියවමින් පවතින කතා මෙහි දිස්වේ "
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/offWhite"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:paddingStart="8dp"
+                    android:paddingTop="5dp"
+                    android:text="Downloaded"
+                    android:textSize="13sp"
+                    android:textColor="@color/darkest"
+                    android:textStyle="bold" />
+                <!--<ImageView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:paddingTop="6dp"-->
+                    <!--android:layout_height="2px"-->
+                    <!--android:background="@drawable/divider_dark_horizontal"/>-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="175dp">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/library_downloaded"
+                        android:layout_width="match_parent"
+                        android:layout_height="175dp"
+                        android:scrollbars="horizontal" />
+
+                    <TextView
+                        android:id="@+id/empty_downloaded_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="175dp"
+                        android:gravity="center"
+                        android:padding="@dimen/button_horizontal_padding"
+                        android:text="තවම කිසිවක් ඩවුන්ලෝඩ් කර නොමැත . "
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/offWhite"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:paddingStart="8dp"
+                    android:paddingTop="3dp"
+                    android:text="Catalogue"
+                    android:textSize="13sp"
+                    android:textColor="@color/darkest"
+                    android:textStyle="bold" />
+                <!--<ImageView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:paddingTop="6dp"-->
+                    <!--android:layout_height="2px"-->
+                    <!--android:background="@drawable/divider_dark_horizontal"/>-->
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="175dp">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/library_new"
+                        android:layout_width="match_parent"
+                        android:layout_height="175dp"
+                        android:scrollbars="horizontal" />
+
+                    <TextView
+                        android:id="@+id/empty_catalogue_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="175dp"
+                        android:gravity="center"
+                        android:padding="@dimen/button_horizontal_padding"
+                        android:text="Update catalogue මෙනුව  මගින් ලබාගත හැකි චිත්‍ර කතා සියල්ල දැක ගත හැක."
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/offWhite"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

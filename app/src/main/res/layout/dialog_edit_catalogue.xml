@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:minHeight="100dp"
+    android:orientation="vertical"
+    android:background="@color/primaryDark"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/tv_detail_dad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:textColor="@color/offWhite"
+        android:textSize="13sp"
+        android:text="If the catalogue icons are empty or catalogue download fails frequently while internet is accessible, the catalogue file has moved to a new URL. \nTry updating the catalogue URL from App page of Google Play without updating the App"
+        android:visibility="visible" />
+
+
+    <EditText
+        android:id="@+id/edit_text_ecd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="12dp"
+        android:textSize="13sp"
+        android:textColor="@color/orange"
+        android:inputType="textMultiLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_default_ecd"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_gravity="start"
+            android:layout_marginTop="8dp"
+            android:minWidth="64dp"
+            android:text="Default"
+            android:textColor="@color/offWhite" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/button_cancel_ecd"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_gravity="start"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:minWidth="64dp"
+            android:text="Cancel"
+            android:textColor="@color/offWhite" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/button_update_ecd"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="8dp"
+            android:minWidth="64dp"
+            android:text="Update"
+            android:textColor="@color/yellow" />
+    </LinearLayout>
+
+</LinearLayout>

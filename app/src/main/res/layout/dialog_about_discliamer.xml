@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:minHeight="100dp"
+    android:orientation="vertical"
+    android:background="@color/primaryDark"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tv_detail_dad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:textColor="@color/offWhite"
+        android:textSize="13sp"
+        android:text="This software is a free distribution.It will not monetize directly or an indirect manner. The app contains comics which were found freely on internet.This app tributes to the great Sri Lankan comic artists and brings years of valuable work for the generations to come.It will not display ads or collect any personal data. To function, the app require permission to access the internet. Some of them have translated.The app primarily uses the Picasso and Retrofit opensource libraries. This was inspired by open source software and the source of the app is available on github for improvements by collaboration. Contact on comixdrive@outlook.com for any comments."
+        android:visibility="visible" />
+
+
+
+    <Button
+        android:id="@+id/button_ok_dad"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center_horizontal"
+        android:minWidth="64dp"
+        android:textColor="@color/offWhite"
+        android:text="OK" />
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/library_new"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="300dp"
+            android:scrollbars="horizontal" />

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent"
+    android:layout_height="1000dp"
+    android:background="#ffffff"
+    android:scrollbars="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        // the views here that you want to make scrollable
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/library_grid"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scrollbars="vertical" />
+
+        <LinearLayout
+            android:id="@+id/library_empty2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/button_horizontal_padding"
+                android:text="තවම කිසිවක් ඩවුන්ලෝඩ් කොට නැත."
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginTop="100dp"
+        android:background="@color/offWhite"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/button_horizontal_padding"
+            android:text="Downloaded"
+            android:textStyle="bold"
+            android:textSize="13sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/library_recent"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:scrollbars="horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginTop="290dp"
+        android:background="@color/offWhite"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/button_horizontal_padding"
+            android:text="Downloaded"
+            android:textStyle="bold"
+            android:textSize="13sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/library_downloaded"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scrollbars="horizontal" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginTop="480dp"
+        android:background="@color/offWhite"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/button_horizontal_padding"
+            android:text="Downloaded"
+            android:textStyle="bold"
+            android:textSize="13sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/library_new"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scrollbars="horizontal" />
+    </LinearLayout>
+
+</FrameLayout>
+</ScrollView>
